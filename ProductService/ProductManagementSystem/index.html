@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/products/controllers/products.controller.js"></script>
+    <base href="/" />
+</head>
+<body>
+    <div ng-app="pmsApp">
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="products">Products</a></li>
+        </ul>
+        <ng-view></ng-view>
+    </div>
+</body>
+</html>
