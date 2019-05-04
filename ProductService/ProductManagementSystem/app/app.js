@@ -1,8 +1,10 @@
 ﻿angular.module('pmsApp', ['ngRoute', 'AdalAngular'])
     .config(['$routeProvider', '$locationProvider','adalAuthenticationServiceProvider','$httpProvider', function ($routeProvider, $locationProvider,adalAuthenticationServiceProvider,$httpProvider) {
-
+        //hashPrefix(!) is needed for ADAL angular to work properly
         $locationProvider.html5Mode(true).hashPrefix('!');
 
+        //client id is the app id of the client/native app
+        //apis are the list of endpoints for which $httpProvider should be intercepted to add the token
         adalAuthenticationServiceProvider.init({
             instance:'https://login.microsoftonline.com/',
             tenant:'shaijurnd.onmicrosoft.com',
