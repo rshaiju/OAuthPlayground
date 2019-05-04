@@ -20,14 +20,14 @@ namespace ProductService
 
         private void ConfigureAuth(IAppBuilder app)
         {
-            string tenant = ConfigurationManager.AppSettings["ida:tenant"];
-            string clientId= ConfigurationManager.AppSettings["ida:clientId"];
+            string tenant = ConfigurationManager.AppSettings["ida:Tenant"];
+            string audience= ConfigurationManager.AppSettings["ida:Audience"];
 
             app.UseWindowsAzureActiveDirectoryBearerAuthentication(new WindowsAzureActiveDirectoryBearerAuthenticationOptions {
                 Tenant= tenant,
                 TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
                 {
-                    ValidAudience=clientId
+                    ValidAudience= audience
                 }
             });
         }
