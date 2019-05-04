@@ -10,6 +10,7 @@ namespace ProductService.Controllers
 {
     public class ProductsController : ApiController
     {
+        [Authorize]
         public IHttpActionResult Get()
         {
             var products = new List<Product>
