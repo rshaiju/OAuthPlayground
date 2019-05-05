@@ -71,6 +71,8 @@
     <Content Include="app\home\views\home.view.html" />
     <Content Include="app\products\controllers\products.controller.js" />
     <Content Include="app\products\views\products.view.html" />
+    <Content Include="app\users\controllers\users.controllers.js" />
+    <Content Include="app\users\views\users.view.html" />
     <Content Include="index.html" />
     <Content Include="scripts\angular-route.min.js" />
     <Content Include="scripts\angular.min.js" />
@@ -87,6 +89,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\home\controllers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
