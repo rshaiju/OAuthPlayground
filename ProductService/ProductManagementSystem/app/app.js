@@ -11,7 +11,7 @@
             clientId: 'b5f373c9-78cf-49f1-ab32-ad4fbd186198',
             endpoints: {
                 'https://localhost:44326/': 'https://shaijurnd.onmicrosoft.com/ProductService',
-                'https://localhost:44317/': 'https://shaijurnd.onmicrosoft.com/ProductService'
+                'https://localhost:44364/': 'https://shaijurnd.onmicrosoft.com/ProductService'
             }
         },$httpProvider);
 
